@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reserva tu ticket de bus</h1>
+
+    <label for="busType">Selecciona el tipo de bus:</label>
+    <select id="busType">
+      <option value="economy">Económico</option>
+      <option value="business">Business</option>
+      <option value="vip">VIP</option>
+    </select>
+
+    <button id="reserveButton">Reservar Ticket</button>
+
+    <div id="ticketDetails" class="hidden">
+      <h2>Detalles del ticket</h2>
+      <p id="ticketInfo"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
