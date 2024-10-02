@@ -1,12 +1,10 @@
 body {
   font-family: Vegur, 'PT Sans', Verdana, sans-serif;
-  background-image: url('img.jpg'); 
+  background-image: url('img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0; 
-  height: 100vh;
 }
 
 .container {
@@ -22,33 +20,19 @@ h1, h2 {
   text-align: center;
 }
 
-.form-group {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  width: 100%;
-}
-
-label {
-  margin-right: 10px;
-}
-
-input[type="number"] {
-  width: 50px;
-}
-
 .hidden {
   display: none;
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   background: black;
   color: white;
   text-align: center;
   height: 50px;
   line-height: 50px;
-  margin-top: 20px;
+  width: 100%;
 }
 
 button {
@@ -69,6 +53,23 @@ button:hover {
 
 #reservationSummary {
   margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 1px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .fixerclean {

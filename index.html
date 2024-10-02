@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reserva de Ticket de Bus</title>
+  <title>Bus Ticket Reservation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Reserva tu ticket de bus</h1>
 
-    <div class="form-group">
-      <label for="busType">Selecciona el tipo de bus:</label>
-      <select id="busType">
-        <option value="economy">Económico</option>
-        <option value="business">Business</option>
-        <option value="vip">VIP</option>
-      </select>
-    </div>
+    <label for="busType">Selecciona el tipo de bus:</label>
+    <select id="busType">
+      <option value="economy">Económico</option>
+      <option value="business">Business</option>
+      <option value="vip">VIP</option>
+    </select>
+    
+    <label for="travelDate">Selecciona la fecha del viaje:</label>
+    <input type="date" id="travelDate" required>
 
-    <div class="form-group">
-      <label for="quantity">Cantidad de tickets:</label>
-      <input type="number" id="quantity" min="1" value="1">
-    </div>
+    <label for="travelTime">Selecciona la hora del viaje:</label>
+    <input type="time" id="travelTime" required>
+
+    <label for="quantity">Cantidad de tickets:</label>
+    <input type="number" id="quantity" min="1" value="1">
 
     <button id="reserveButton">Reservar Ticket</button>
 
@@ -36,9 +38,9 @@
       <p id="summaryInfo"></p>
     </div>
   </div>
-
+  
   <footer>
-    Creado por Axel Jerónimo &copy; 2024 Reservas de Viaje
+    Created by Axel Jerónimo &copy; 2024 Reservas de Viaje
   </footer>
 
   <script src="app.js"></script>

@@ -89,6 +89,8 @@ class VIPTicket {
 document.getElementById('reserveButton').addEventListener('click', () => {
   const busType = document.getElementById('busType').value;
   const quantity = parseInt(document.getElementById('quantity').value);
+  const travelDate = document.getElementById('travelDate').value;
+  const travelTime = document.getElementById('travelTime').value;
 
   if (quantity <= 0 || isNaN(quantity)) {
     alert('Por favor, ingresa una cantidad válida de tickets.');
@@ -106,7 +108,7 @@ document.getElementById('reserveButton').addEventListener('click', () => {
 
   // Mostrar detalles del ticket
   document.getElementById('ticketInfo').textContent = 
-    `${quantity} ticket(s) de tipo ${tickets[0].type} reservados.`;
+    `${quantity} ticket(s) de tipo ${tickets[0].type} reservados para el ${travelDate} a las ${travelTime}.`;
 
   document.getElementById('ticketDetails').classList.remove('hidden');
 
@@ -115,7 +117,7 @@ document.getElementById('reserveButton').addEventListener('click', () => {
   const totalPrice = reservationSystem.getTotalPrice();
 
   document.getElementById('summaryInfo').textContent = 
-    `Total de tickets reservados: ${totalQuantity}. Costo total: $${totalPrice}.`;
+    `Total de tickets reservados: ${totalQuantity}. Costo total: $${totalPrice}. Fecha: ${travelDate}, Hora: ${travelTime}.`;
 
   document.getElementById('reservationSummary').classList.remove('hidden');
 });
