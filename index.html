@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bus Ticket Reservation</title>
+  <title>Reserva de Ticket de Bus</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Reserva tu ticket de bus</h1>
 
-    <label for="busType">Selecciona el tipo de bus:</label>
-    <select id="busType">
-      <option value="economy">Económico</option>
-      <option value="business">Business</option>
-      <option value="vip">VIP</option>
-    </select>
+    <div class="form-group">
+      <label for="busType">Selecciona el tipo de bus:</label>
+      <select id="busType">
+        <option value="economy">Económico</option>
+        <option value="business">Business</option>
+        <option value="vip">VIP</option>
+      </select>
+    </div>
 
-    <div class=" fixerclean"></div>
-
-    <label for="quantity">Cantidad de tickets:</label>
-    <input type="number" id="quantity" min="1" value="1">
+    <div class="form-group">
+      <label for="quantity">Cantidad de tickets:</label>
+      <input type="number" id="quantity" min="1" value="1">
+    </div>
 
     <button id="reserveButton">Reservar Ticket</button>
 
@@ -33,10 +35,10 @@
       <h2>Resumen de la reserva</h2>
       <p id="summaryInfo"></p>
     </div>
-
   </div>
+
   <footer>
-    Created by Axel Jerónimo &copy; 2024 Reservas de Viaje
+    Creado por Axel Jerónimo &copy; 2024 Reservas de Viaje
   </footer>
 
   <script src="app.js"></script>
