@@ -1,14 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+  background-image: url('img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
   
   .container {
     max-width: 600px;
+    border-radius: 25px;
     margin: 50px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
   h1, h2 {
@@ -18,9 +23,18 @@ body {
   .hidden {
     display: none;
   }
+  footer{
+    position: bottom;
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+  }
   
   button {
     display: block;
+    border-radius: 50px;
     width: 100%;
     padding: 10px;
     margin-top: 20px;
@@ -33,4 +47,10 @@ body {
   button:hover {
     background-color: #0056b3;
   }
+  #reservationSummary {
+    margin-top: 20px;
+  }
   
+  .hidden {
+    display: none;
+  } 

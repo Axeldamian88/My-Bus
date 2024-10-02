@@ -17,13 +17,25 @@
       <option value="vip">VIP</option>
     </select>
 
+    <label for="quantity">Cantidad de tickets:</label>
+    <input type="number" id="quantity" min="1" value="1">
+
     <button id="reserveButton">Reservar Ticket</button>
 
     <div id="ticketDetails" class="hidden">
       <h2>Detalles del ticket</h2>
       <p id="ticketInfo"></p>
     </div>
+
+    <div id="reservationSummary" class="hidden">
+      <h2>Resumen de la reserva</h2>
+      <p id="summaryInfo"></p>
+    </div>
+
   </div>
+  <footer>
+    Created by Axel Jerónimo &copy; 2024 Reservas de Viaje
+  </footer>
 
   <script src="app.js"></script>
 </body>
