@@ -1,4 +1,4 @@
-// Singleton para la reserva de tickets
+
 class TicketReservation {
   constructor() {
     if (TicketReservation.instance) {
@@ -29,7 +29,7 @@ class TicketReservation {
   }
 }
 
-// Clase Factory para crear diferentes tipos de tickets
+
 class TicketFactory {
   static createTicket(type, quantity) {
     let tickets = [];
@@ -98,10 +98,8 @@ document.getElementById('reserveButton').addEventListener('click', () => {
   // Crear tickets
   const tickets = TicketFactory.createTicket(busType, quantity);
 
-  // Obtener la instancia del Singleton para reservar los tickets
   const reservationSystem = new TicketReservation();
 
-  // Añadir todos los tickets creados a la reserva
   tickets.forEach(ticket => reservationSystem.addTicket(ticket));
 
   // Mostrar detalles del ticket
